@@ -1,0 +1,32 @@
+#include <iostream>
+
+using namespace std;
+int main() 
+{
+	cout << "Would you like to continue? (Y/N)" << endl;
+	char ans;
+	cin >> ans;
+
+	switch (ans)
+	{
+	case 'Y':
+	case 'y':
+	{
+		cout << "Continuing the game..." << endl;
+		break;
+	}
+	case 'N':
+	case 'n':
+	{
+		cout << "Thanks for playing!" << endl;
+		break;
+	}
+	default:
+	{
+		cout << "Invalid Input" << endl;
+	}
+	};
+
+	cin.get();
+	return 0;
+}
