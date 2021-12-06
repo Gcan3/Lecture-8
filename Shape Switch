@@ -1,0 +1,59 @@
+#include <iostream>
+using namespace std;
+int main()
+{
+	int sides;
+	cout << "Enter the number of sides from 3 to 10" << endl;
+	cin >> sides;
+
+	switch (sides) 
+	{
+	case 3:
+	{
+		cout << "That is a triangle" << endl;
+		break;
+	}
+	case 4:
+	{
+		cout << "That is a quadrilateral" << endl;
+		break;
+	}
+	case 5:
+	{
+		cout << "That is a pentagon" << endl;
+		break;
+	}
+	case 6:
+	{
+		cout << "That is a hexagon" << endl;
+		break;
+	}
+	case 7:
+	{
+		cout << "That is a heptagon" << endl;
+		break;
+	}
+	case 8:
+	{
+		cout << "That is an octagon" << endl;
+		break;
+	}
+	case 9:
+	{
+		cout << "That is a nonagon" << endl;
+		break;
+	}
+	case 10:
+	{
+		cout << "That is a decagon" << endl;
+		break;
+	}
+	default:
+	{
+		cout << "Invalid input" << endl;
+		break;
+	}
+	}
+	cin.get();
+	return 0;
+}
