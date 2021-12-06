@@ -1,0 +1,45 @@
+#include <iostream>
+
+using namespace std;
+int main() 
+{
+	cout << "Enter a month in numerals to see how many days are in that month:\n";
+	int month;
+	cin >> month;
+
+	switch (month)
+	{
+	case 1:
+	case 3:
+	case 5:
+	case 7:
+	case 8:
+	case 10:
+	case 12:
+	{
+		cout << "There are 31 days in this month" << endl;
+		break;
+	}
+
+	case 4: 
+	case 6:
+	case 9:
+	case 11:
+	{
+		cout << "There are 30 days in this month" << endl;
+		break;
+	}
+
+	case 2:
+	{
+		cout << "It can vary, the month of Febuary can either have 28 or 29 days" << endl;
+		break;
+	}
+
+	default:
+	{
+		cout << "Invalid input" << endl;
+		break;
+	}
+	}
+}
